@@ -8,9 +8,3 @@ edition = "2018"
 [dependencies]
 hyper = { version = "1.0.0-rc.2", features = ["full"] }
 tokio = { version = "1.21.2", features = ["rt", "rt-multi-thread", "net", "macros", "sync", "signal", "io-std"] }
-tokio-tungstenite = { version = "0.18.0", features = ["rustls"] }
-tungstenite = { version = "0.18.0", features = ["rustls"] }
-
-[profile.release]
-lto = true
-opt-level = 3
